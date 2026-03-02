@@ -1,0 +1,66 @@
+.life-wheel {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.life-wheel--compact {
+  gap: var(--space-4);
+}
+
+.life-wheel__visual {
+  display: grid;
+  overflow-x: auto;
+  place-items: center;
+  width: 100%;
+}
+
+.life-wheel__chart {
+  height: 100%;
+  margin: 2rem;
+  width: fit-content;
+}
+
+.life-wheel--compact .life-wheel__chart {
+  width: min(100%, 260px);
+}
+
+.life-wheel__grid-circle {
+  fill: none;
+  stroke: color-mix(in srgb, var(--color-accent) 18%, transparent);
+  stroke-width: 1;
+}
+
+.life-wheel__axis-line {
+  stroke: color-mix(in srgb, var(--color-accent) 28%, transparent);
+  stroke-width: 1;
+}
+
+.life-wheel__shape {
+  fill: color-mix(in srgb, var(--color-accent) 32%, transparent);
+  stroke: var(--color-accent);
+  stroke-width: 2;
+  transition: all var(--transition-base);
+}
+
+.life-wheel__axis-label {
+  fill: var(--color-text-secondary);
+  font-size: 0.75rem;
+  font-family: var(--font-body);
+}
+
+.life-wheel__sliders {
+  display: grid;
+  gap: var(--space-4);
+}
+
+@media (min-width: 1024px) {
+  .life-wheel {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .life-wheel__chart {
+    width: 100%;
+    max-width: 360px;
+  }
+}

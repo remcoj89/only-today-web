@@ -1,0 +1,114 @@
+.today-screen {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  display: grid;
+  gap: var(--space-4);
+  padding-bottom: calc(var(--space-16) + env(safe-area-inset-bottom));
+}
+
+.today-screen__loading-card {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.today-screen__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.today-screen__header h1 {
+  margin: 0;
+}
+
+.today-screen__date {
+  margin: var(--space-1) 0 0;
+  color: var(--color-text-secondary);
+}
+
+.today-screen__date-controls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+
+.today-screen__sections {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.today-screen__section {
+  animation: today-section-fade 300ms ease both;
+}
+
+.today-screen__section:nth-child(2) {
+  animation-delay: 40ms;
+}
+
+.today-screen__section:nth-child(3) {
+  animation-delay: 80ms;
+}
+
+.today-screen__section:nth-child(4) {
+  animation-delay: 120ms;
+}
+
+.today-screen__section:nth-child(5) {
+  animation-delay: 160ms;
+}
+
+.today-screen__section:nth-child(6) {
+  animation-delay: 200ms;
+}
+
+.today-screen__section:nth-child(7) {
+  animation-delay: 240ms;
+}
+
+@keyframes today-section-fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.today-screen__close-card {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.today-screen__close-card h2,
+.today-screen__close-card p {
+  margin: 0;
+}
+
+.today-screen__readonly-overlay {
+  position: sticky;
+  bottom: var(--space-4);
+  z-index: 1;
+  border: 1px solid var(--color-warning);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--color-warning) 10%, transparent);
+  color: var(--color-text-primary);
+  padding: var(--space-2) var(--space-3);
+}
+
+@media (max-width: 1023px) {
+  .today-screen {
+    max-width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .today-screen__section {
+    animation: none;
+  }
+}
+

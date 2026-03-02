@@ -1,0 +1,65 @@
+.today-pomodoro {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-3);
+}
+
+.today-pomodoro__ring {
+  --progress: 100%;
+  width: 220px;
+  height: 220px;
+  border-radius: var(--radius-full);
+  background: conic-gradient(var(--color-accent) var(--progress), var(--color-bg-secondary) var(--progress));
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.today-pomodoro__ring::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: var(--radius-full);
+  background: var(--color-bg-elevated);
+}
+
+.today-pomodoro__time {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-mono-mobile);
+}
+
+.today-pomodoro__task,
+.today-pomodoro__counter {
+  margin: 0;
+  text-align: center;
+}
+
+.today-pomodoro__counter {
+  color: var(--color-text-secondary);
+}
+
+.today-pomodoro__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  justify-content: flex-end;
+}
+
+.today-pomodoro--running .today-pomodoro__ring {
+  box-shadow: var(--shadow-glow);
+  animation: pomodoro-pulse 2s ease infinite;
+}
+
+@keyframes pomodoro-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+

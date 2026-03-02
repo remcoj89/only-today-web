@@ -1,0 +1,9 @@
+.island-error-boundary {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.island-error-boundary h2,
+.island-error-boundary p {
+  margin: 0;
+}

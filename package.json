@@ -1,0 +1,27 @@
+{
+  "name": "@hemera/web",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "start": "npx serve dist -s -l ${PORT:-3000}",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.4.1",
+    "@astrojs/sitemap": "^3.7.0",
+    "@supabase/supabase-js": "^2.46.2",
+    "astro": "^5.14.3",
+    "date-fns": "^4.1.0",
+    "dexie": "^4.3.0",
+    "lucide-react": "^0.544.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3"
+  }
+}

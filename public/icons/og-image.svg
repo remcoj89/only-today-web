@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0f2347" />
+  <circle cx="600" cy="315" r="150" fill="#dbb171" opacity="0.2" />
+  <path d="M360 315h480" stroke="#dbb171" stroke-width="28" stroke-linecap="round" />
+  <circle cx="600" cy="315" r="64" fill="#dbb171" />
+  <text x="600" y="500" text-anchor="middle" font-size="68" font-family="Source Sans 3, Arial, sans-serif" fill="#f8f5ef">
+    Only Today
+  </text>
+</svg>

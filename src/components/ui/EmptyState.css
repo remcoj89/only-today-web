@@ -1,0 +1,22 @@
+.ui-empty-state {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-3);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-secondary);
+  text-align: center;
+  padding: var(--space-6);
+}
+
+.ui-empty-state__icon {
+  color: var(--color-accent);
+}
+
+.ui-empty-state__title {
+  margin: 0;
+}
+
+.ui-empty-state__description {
+  color: var(--color-text-secondary);
+}

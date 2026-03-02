@@ -1,0 +1,49 @@
+.register-form {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.register-form__strength {
+  margin-top: calc(var(--space-2) * -1);
+  display: grid;
+  gap: var(--space-2);
+}
+
+.register-form__strength-label {
+  margin: 0;
+  font-size: var(--font-size-small);
+}
+
+.register-form__strength-label--weak {
+  color: var(--color-error);
+}
+
+.register-form__strength-label--medium {
+  color: var(--color-warning);
+}
+
+.register-form__strength-label--strong {
+  color: var(--color-success);
+}
+
+.register-form__error {
+  margin: 0;
+  color: var(--color-error);
+  font-size: var(--font-size-small);
+}
+
+.register-form__login-link {
+  margin: 0;
+  font-size: var(--font-size-small);
+
+  a {
+    color: var(--color-accent);
+  }
+
+  a:hover {
+    color: var(--color-accent-hover);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+}

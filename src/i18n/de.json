@@ -1,0 +1,481 @@
+{
+  "common": {
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "confirm": "Bestätigen",
+    "loading": "Lädt...",
+    "offline": "Du bist offline - Änderungen werden lokal gespeichert",
+    "syncing": "Synchronisiert...",
+    "synced": "Synchronisiert",
+    "syncError": "Synchronisierung fehlgeschlagen",
+    "syncConflict": "Es gab einen Konflikt",
+    "retry": "Erneut versuchen"
+  },
+  "layout": {
+    "home": "Heute",
+    "planning": "Planung",
+    "calendar": "Kalender",
+    "analytics": "Analyse",
+    "accountability": "Buddy",
+    "settings": "Einstellungen",
+    "logout": "Abmelden",
+    "loggingOut": "Abmelden...",
+    "streak": "Streak: {{count}} Tage",
+    "homeAria": "Only Today Startseite",
+    "mainNavAria": "Hauptnavigation",
+    "mobileNavAria": "Mobile Navigation",
+    "collapseSidebar": "Seitenleiste einklappen",
+    "expandSidebar": "Seitenleiste ausklappen",
+    "currentStreakAria": "Aktuelle Streak",
+    "settingsAria": "Zu Einstellungen",
+    "openMenu": "Menü öffnen",
+    "todayIs": "Heute ist {{date}}"
+  },
+  "auth": {
+    "login": "Anmelden",
+    "register": "Konto erstellen",
+    "forgotPassword": "Passwort vergessen?",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "confirmPassword": "Passwort bestätigen",
+    "sendResetLink": "Reset-Link senden",
+    "resetEmailConfirmation": "Prüfe dein Postfach auf einen Reset-Link.",
+    "backToLogin": "Zurück zur Anmeldung",
+    "createAccountLink": "Konto erstellen",
+    "alreadyHaveAccount": "Schon ein Konto? Anmelden",
+    "acceptTerms": "Ich stimme den Bedingungen zu",
+    "linksAria": "Authentifizierungslinks",
+    "sessionExpired": "Deine Sitzung ist abgelaufen. Bitte erneut anmelden.",
+    "passwordStrength": {
+      "weak": "Passwortstärke: schwach",
+      "medium": "Passwortstärke: mittel",
+      "strong": "Passwortstärke: stark"
+    },
+    "errors": {
+      "emailRequired": "Bitte gib deine E-Mail-Adresse ein.",
+      "emailInvalid": "Bitte gib eine gültige E-Mail-Adresse ein.",
+      "passwordRequired": "Bitte gib dein Passwort ein.",
+      "passwordMinLength": "Dein Passwort muss mindestens 8 Zeichen lang sein.",
+      "confirmPasswordRequired": "Bitte bestätige dein Passwort.",
+      "confirmPasswordMismatch": "Die Passwörter stimmen nicht überein.",
+      "termsRequired": "Du musst den Bedingungen zustimmen.",
+      "invalidCredentials": "Ungültige E-Mail oder ungültiges Passwort.",
+      "emailNotConfirmed": "Bitte bestätige zuerst deine E-Mail-Adresse.",
+      "emailAlreadyRegistered": "Für diese E-Mail-Adresse existiert bereits ein Konto.",
+      "generic": "Etwas ist schiefgelaufen. Bitte versuche es erneut."
+    }
+  },
+  "onboarding": {
+    "loading": "Onboarding wird geladen...",
+    "progress": {
+      "label": "Schritt {{current}} von {{total}}",
+      "ariaLabel": "Onboarding-Fortschritt"
+    },
+    "actions": {
+      "previous": "Zurück",
+      "next": "Weiter",
+      "beginQuarter": "Starte dein Quartal",
+      "startFirstDay": "Starte deinen ersten Tag"
+    },
+    "welcome": {
+      "title": "Willkommen bei Only Today",
+      "subtitle": "Nicht alles auf einmal. Heute klar, morgen stärker.",
+      "bullets": {
+        "first": "Definiere heute dein EINS und deine DREI.",
+        "second": "Arbeite in Fokusblöcken und schließe deinen Tag bewusst ab.",
+        "third": "Baue Rhythmus über Quartal, Monat, Woche und Tag auf."
+      }
+    },
+    "lifeWheel": {
+      "title": "Schritt 2 — Lebensrad",
+      "description": "Bewerte jede Kategorie von 1 bis 10, damit du sofort siehst, wo Fokus nötig ist.",
+      "categories": {
+        "work": "Arbeit",
+        "fun": "Spaß",
+        "social": "Soziales",
+        "giving": "Geben",
+        "money": "Geld",
+        "growth": "Wachstum",
+        "health": "Gesundheit",
+        "love": "Liebe"
+      }
+    },
+    "goals": {
+      "title": "Schritt 3 — Quartalsziele",
+      "description": "Definiere genau drei Ziele. Ohne drei Titel kannst du nicht weiter.",
+      "goalCard": "Ziel {{index}}",
+      "goalTitle": "Titel",
+      "whatIsDifferent": "Was ist anders, wenn ich das erreicht habe?",
+      "consequencesIfNot": "Was passiert, wenn ich es nicht erreiche?",
+      "rewardIfAchieved": "Welche Belohnung gebe ich mir selbst?",
+      "progress": "Fortschritt",
+      "progressValue": "Fortschritt: {{progress}}%"
+    },
+    "confirmation": {
+      "title": "Schritt 4 — Bestätigung",
+      "description": "Das ist dein Startpunkt. Prüfe deine Werte und Ziele und starte dann deinen ersten Tag.",
+      "lifeWheel": "Lebensrad-Zusammenfassung",
+      "goals": "Ziel-Zusammenfassung"
+    },
+    "defaults": {
+      "goalFallback": "Unbenanntes Ziel"
+    },
+    "errors": {
+      "loadFailed": "Dein Onboarding-Status konnte nicht geladen werden. Aktualisiere die Seite und versuche es erneut.",
+      "saveFailed": "Dein Onboarding konnte nicht gespeichert werden. Bitte versuche es erneut.",
+      "goalTitleRequired": "Gib einen Titel fur dieses Ziel ein."
+    }
+  },
+  "planning": {
+    "overview": {
+      "title": "Planung",
+      "subtitle": "Sieh deine Ziele nach Quartal, Monat und Woche.",
+      "tabs": {
+        "quarter": "Quartal",
+        "month": "Monat",
+        "week": "Woche"
+      },
+      "loading": "Planung laden...",
+      "empty": "Noch keine Ziele für diesen Zeitraum.",
+      "viewDetails": "Details anzeigen",
+      "error": "Wir konnten die Planung nicht laden."
+    },
+    "quarter": {
+      "title": "Quartalsplanung",
+      "subtitle": "Lebensrad und drei Quartalsziele.",
+      "lifeWheel": "Lebensrad",
+      "rescore": "Neu bewerten",
+      "goals": "Quartalsziele",
+      "loading": "Quartal wird geladen...",
+      "empty": "Noch keine Quartalsziele.",
+      "error": "Wir konnten das Quartal nicht laden."
+    },
+    "month": {
+      "title": "Monatsplanung",
+      "subtitle": "Monatsziele verknüpft mit deinem Quartal.",
+      "addGoal": "Monatsziel hinzufügen",
+      "addGoalModalTitle": "Monatsziel hinzufügen",
+      "editGoal": "Bearbeiten",
+      "editGoalModalTitle": "Monatsziel bearbeiten",
+      "deleteGoal": "Löschen",
+      "deleteGoalTitle": "Monatsziel löschen",
+      "deleteGoalDescription": "Bist du sicher, dass du dieses Monatsziel löschen möchtest?",
+      "formTitle": "Titel",
+      "formTitlePlaceholder": "Was möchtest du diesen Monat erreichen?",
+      "formTitleRequired": "Bitte gib einen Titel ein",
+      "formDescription": "Beschreibung",
+      "formDescriptionPlaceholder": "Optional: weitere Details zu deinem Ziel",
+      "formLinkedQuarter": "Verknüpftes Quartalsziel",
+      "formLinkedQuarterNone": "Keins",
+      "loading": "Monat wird geladen...",
+      "empty": "Du hast noch keine Ziele für diesen Zeitraum.",
+      "error": "Wir konnten den Monat nicht laden."
+    },
+    "week": {
+      "title": "Wochenplanung",
+      "subtitle": "Wochenziele und Tagesstatus.",
+      "addGoal": "Wochenziel hinzufügen",
+      "addGoalModalTitle": "Wochenziel hinzufügen",
+      "editGoal": "Bearbeiten",
+      "editGoalModalTitle": "Wochenziel bearbeiten",
+      "deleteGoal": "Löschen",
+      "deleteGoalTitle": "Wochenziel löschen",
+      "deleteGoalDescription": "Bist du sicher, dass du dieses Wochenziel löschen möchtest?",
+      "formTitle": "Titel",
+      "formTitlePlaceholder": "Was möchtest du diese Woche erreichen?",
+      "formTitleRequired": "Bitte gib einen Titel ein",
+      "formDescription": "Beschreibung",
+      "formDescriptionPlaceholder": "Optional: weitere Details zu deinem Ziel",
+      "formLinkedMonth": "Verknüpftes Monatsziel",
+      "formLinkedMonthNone": "Keins",
+      "formAssignedDays": "Tagen zuweisen",
+      "dayShort": { "0": "Mo", "1": "Di", "2": "Mi", "3": "Do", "4": "Fr", "5": "Sa", "6": "So" },
+      "agendaUnassigned": "Noch nicht eingeplant",
+      "agendaTitle": "Wochenagenda",
+      "dayStatus": { "done": "Erledigt", "open": "Offen", "missed": "Verpasst" },
+      "loading": "Woche wird geladen...",
+      "empty": "Du hast noch keine Ziele für diesen Zeitraum.",
+      "error": "Wir konnten die Woche nicht laden."
+    }
+  },
+  "today": {
+    "title": "Heute",
+    "dayStart": "Tagesstart",
+    "mindsetGratitude": "Ich bin dankbar fur...",
+    "mindsetIntention": "Meine Intention fur heute",
+    "oneThing": "Dein EINS",
+    "topThree": "Deine DREI",
+    "closeDay": "Tag abschließen"
+  },
+  "calendar": {
+    "title": "Kalender",
+    "subtitle": "Sieh dir deinen Rhythmus an und offne jeden Tag als schreibgeschutzte Historie.",
+    "loading": "Kalender wird geladen...",
+    "empty": "Noch keine Kalenderdaten verfugbar.",
+    "views": {
+      "heatmap": "Heatmap",
+      "month": "Monatsansicht"
+    },
+    "viewToggleAriaLabel": "Kalenderansicht wechseln",
+    "previousYear": "Vorheriges Jahr",
+    "nextYear": "Nachstes Jahr",
+    "previousMonth": "Vorheriger Monat",
+    "nextMonth": "Nachster Monat",
+    "tooltip": "{{date}} - Score {{score}}%",
+    "weekdays": {
+      "mon": "Mo",
+      "tue": "Di",
+      "wed": "Mi",
+      "thu": "Do",
+      "fri": "Fr",
+      "sat": "Sa",
+      "sun": "So"
+    },
+    "status": {
+      "open": "Offen",
+      "closed": "Abgeschlossen",
+      "auto_closed": "Automatisch geschlossen",
+      "empty": "Keine Daten"
+    },
+    "errors": {
+      "loadFailed": "Dein Kalender konnte nicht geladen werden. Bitte versuche es erneut.",
+      "loadDayFailed": "Die Tagesdetails konnten nicht geladen werden. Bitte versuche es erneut."
+    },
+    "dayDetail": {
+      "title": "Tagesdetails",
+      "titleWithDate": "Tagesdetails - {{date}}",
+      "loading": "Tagesdetails werden geladen...",
+      "empty": "Fur diesen Tag sind keine Daten verfugbar.",
+      "score": "Score",
+      "notFilled": "Nicht ausgefullt",
+      "sections": {
+        "dayStart": "Tagesstart-Score",
+        "mindset": "Mindset",
+        "oneAndThree": "EINS + DREI",
+        "lifePillars": "Lebenssagen",
+        "reflection": "Reflexion"
+      }
+    }
+  },
+  "analytics": {
+    "page": {
+      "ariaLabel": "Analytics-Dashboard",
+      "title": "Analyse",
+      "subtitle": "Sieh dir deinen Rhythmus und deine Verhaltensmuster im Zeitverlauf an.",
+      "loading": "Analytics werden geladen...",
+      "refresh": "Aktualisieren",
+      "empty": "Fur diesen Zeitraum sind noch keine Analytics-Daten verfugbar."
+    },
+    "period": {
+      "ariaLabel": "Zeitraumauswahl",
+      "7d": "7 Tage",
+      "30d": "30 Tage",
+      "quarter": "Quartal"
+    },
+    "pillars": {
+      "training": "Training",
+      "deepRelaxation": "Tiefe Entspannung",
+      "healthyNutrition": "Gesunde Ernahrung",
+      "realConnection": "Echte Verbindung"
+    },
+    "cards": {
+      "emptyTitle": "Noch keine Daten",
+      "emptyDescription": "Schließe Tage ab und beende Pomodoros, um Einblicke zu sehen.",
+      "completion": {
+        "title": "Tagesabschluss-Trend",
+        "subtitle": "Completeness-Score uber den gewahlten Zeitraum."
+      },
+      "dayStart": {
+        "title": "Tagesstart-Adherence",
+        "subtitle": "Prozentsatz der Tage mit vollstandigem Tagesstart."
+      },
+      "dayClose": {
+        "label": "Tagesabschluss-Checkliste"
+      },
+      "completionAverage": {
+        "label": "Durchschnittliche Completion"
+      },
+      "pomodoro": {
+        "title": "Pomodoros geplant vs erledigt",
+        "subtitle": "Letzte 10 Datenpunkte im gewahlten Zeitraum.",
+        "planned": "Geplant",
+        "done": "Erledigt"
+      },
+      "streaks": {
+        "title": "Streaks",
+        "dayClosed": "Tag abgeschlossen",
+        "allPillars": "Alle Säulen",
+        "perPillar": "Pro Säule",
+        "days": "Tage in Folge"
+      },
+      "pillars": {
+        "title": "Lebenssaulen-Adherence",
+        "subtitle": "Wie konsequent du jede Saeule erfullst."
+      },
+      "correlation": {
+        "title": "Korrelations-Einblick",
+        "subtitle": "Zusammenhang zwischen Tagesstart und Tagesabschluss.",
+        "insight": "Wenn dein Tagesstart komplett war, hast du deinen Tag {{percentage}}% haufiger abgeschlossen.",
+        "startMetric": "Komplette Tagesstarts",
+        "endMetric": "Abgeschlossene Tage"
+      }
+    },
+    "errors": {
+      "loadFailed": "Deine Analytics konnten nicht geladen werden. Bitte versuche es erneut."
+    }
+  },
+  "accountability": {
+    "page": {
+      "ariaLabel": "Accountability-Seite",
+      "title": "Buddy",
+      "subtitle": "Haltet euch mit täglichen Check-ins und Status auf hohem Niveau gegenseitig fokussiert.",
+      "loading": "Buddy-Übersicht wird geladen...",
+      "refresh": "Aktualisieren"
+    },
+    "setup": {
+      "ariaLabel": "Buddy verbinden",
+      "emptyTitle": "Noch kein Buddy verbunden",
+      "emptyDescription": "Verbinde einen Buddy und baut gemeinsam Rhythmus auf. Nicht verschieben, heute starten.",
+      "inviteTitle": "Buddy einladen",
+      "inviteDescription": "Sende eine Einladung über die E-Mail-Adresse.",
+      "emailLabel": "E-Mail deines Buddys",
+      "emailPlaceholder": "buddy@beispiel.de",
+      "sendInvite": "Einladung senden",
+      "inviteHint": "Nach dem Senden erscheint die Anfrage unten bei offenen Anfragen.",
+      "requestsTitle": "Offene Anfragen",
+      "incomingTitle": "Eingehend",
+      "outgoingTitle": "Ausgehend",
+      "noIncoming": "Keine eingehenden Anfragen.",
+      "noOutgoing": "Keine ausgehenden Anfragen.",
+      "requestFrom": "Von Benutzer {{userId}}",
+      "requestTo": "An Benutzer {{userId}}",
+      "accept": "Annehmen",
+      "reject": "Ablehnen",
+      "pending": "Ausstehend"
+    },
+    "partner": {
+      "ariaLabel": "Partnerstatus",
+      "title": "Status deines Buddys",
+      "unknownEmail": "E-Mail nicht verfügbar",
+      "streakLabel": "Partner-Streak",
+      "streakDays": "Tage in Folge",
+      "dayClosed": "Tag abgeschlossen",
+      "oneDone": "EINS erledigt",
+      "reflectionDone": "Reflexion ausgefüllt"
+    },
+    "checkin": {
+      "ariaLabel": "Check-in senden",
+      "title": "Täglicher Check-in",
+      "subtitle": "Sende maximal eine Nachricht pro Tag (max. 500 Zeichen).",
+      "messageLabel": "Dein Check-in",
+      "placeholder": "Was hast du heute gemacht und wo hängst du fest?",
+      "send": "Check-in senden",
+      "alreadySent": "Heute bereits gesendet",
+      "sent": "Check-in gesendet."
+    },
+    "history": {
+      "ariaLabel": "Check-in Verlauf",
+      "title": "Verlauf",
+      "empty": "Noch keine Check-ins vorhanden.",
+      "you": "Du",
+      "partner": "Buddy"
+    },
+    "errors": {
+      "emailRequired": "Gib die E-Mail deines Buddys ein.",
+      "messageRequired": "Gib zuerst eine Nachricht ein.",
+      "generic": "Diese Aktion konnte nicht abgeschlossen werden. Bitte versuche es erneut."
+    }
+  },
+  "settings": {
+    "page": {
+      "ariaLabel": "Einstellungsseite",
+      "title": "Einstellungen",
+      "subtitle": "Verwalte dein Profil, Benachrichtigungen und Konto."
+    },
+    "profile": {
+      "title": "Profil",
+      "description": "Deine persönlichen Daten.",
+      "nameLabel": "Name",
+      "emailLabel": "E-Mail-Adresse",
+      "errors": {
+        "nameRequired": "Gib deinen Namen ein."
+      }
+    },
+    "notifications": {
+      "title": "Benachrichtigungen",
+      "description": "Richte Erinnerungen und Benachrichtigungen ein.",
+      "dayStartReminder": "Tagesstart-Erinnerung",
+      "dayCloseReminder": "Tagesabschluss-Erinnerung",
+      "pushEnabled": "Push-Benachrichtigungen",
+      "emailEscalations": "E-Mail-Eskalationen",
+      "timeLabel": "Zeit",
+      "errors": {
+        "invalidTime": "Ungültiges Zeitformat (HH:MM)."
+      }
+    },
+    "theme": {
+      "title": "Design",
+      "description": "Wähle dein helles oder dunkles Erscheinungsbild.",
+      "light": "Hell",
+      "dark": "Dunkel",
+      "system": "System"
+    },
+    "language": {
+      "title": "Sprache",
+      "description": "Wähle deine bevorzugte Sprache.",
+      "label": "Sprache",
+      "nl": "Nederlands",
+      "en": "English",
+      "de": "Deutsch"
+    },
+    "account": {
+      "title": "Konto",
+      "description": "Zeitzone, Passwort und Kontolöschung.",
+      "timezoneLabel": "Zeitzone",
+      "timezoneHelp": "Deine Zeiten werden in dieser Zeitzone angezeigt.",
+      "saveTimezone": "Zeitzone speichern",
+      "passwordTitle": "Passwort ändern",
+      "passwordDescription": "Wähle ein sicheres Passwort mit mindestens 8 Zeichen.",
+      "currentPassword": "Aktuelles Passwort",
+      "newPassword": "Neues Passwort",
+      "changePassword": "Passwort ändern",
+      "deleting": "Konto wird gelöscht...",
+      "deleteTitle": "Konto löschen",
+      "deleteDescription": "Dies entfernt dauerhaft alle deine Kontodaten und kann nicht rückgängig gemacht werden.",
+      "deleteAction": "Konto löschen",
+      "deleteConfirmTitle": "Konto löschen?",
+      "deleteConfirmDescription": "Tippe DELETE zur Bestätigung.",
+      "deleteSecondStepTitle": "Bestätigung",
+      "deleteSecondStepDescription": "Tippe DELETE, um dein Konto dauerhaft zu löschen.",
+      "deleteSecondStepLabel": "Tippe DELETE",
+      "deleteSecondStepPlaceholder": "DELETE",
+      "errors": {
+        "passwordRequired": "Gib dein Passwort ein.",
+        "passwordTooShort": "Dein Passwort muss mindestens 8 Zeichen haben.",
+        "deleteConfirmation": "Tippe DELETE zur Bestätigung."
+      }
+    },
+    "messages": {
+      "loadError": "We konnten deine Einstellungen nicht laden. Bitte versuche es erneut.",
+      "loading": "Einstellungen werden geladen...",
+      "profileSaved": "Profil gespeichert.",
+      "profileSaveError": "Profil konnte nicht gespeichert werden.",
+      "notificationsSaved": "Benachrichtigungen gespeichert.",
+      "notificationsSaveError": "Benachrichtigungen konnten nicht gespeichert werden.",
+      "themeSaved": "Design gespeichert.",
+      "languageSaved": "Sprache gespeichert.",
+      "timezoneSaved": "Zeitzone gespeichert.",
+      "timezoneSaveError": "Zeitzone konnte nicht gespeichert werden.",
+      "passwordSaved": "Passwort geändert.",
+      "passwordSaveError": "Passwort konnte nicht geändert werden.",
+      "deleteError": "Konto konnte nicht gelöscht werden."
+    }
+  },
+  "pomodoro": {
+    "focusComplete": "Fokusblock abgeschlossen",
+    "breakStarted": "Pause gestartet",
+    "breakComplete": "Pause abgeschlossen",
+    "timeRemaining": "Verbleibende Zeit: {{time}}"
+  }
+}

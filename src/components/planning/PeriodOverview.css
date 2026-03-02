@@ -1,0 +1,103 @@
+.period-overview {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  display: grid;
+  gap: var(--space-4);
+}
+
+.period-overview__header h1 {
+  margin: 0;
+}
+
+.period-overview__header p {
+  margin: var(--space-1) 0 0;
+  color: var(--color-text-secondary);
+}
+
+.period-overview__tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+
+.period-overview__tab {
+  border: 1px solid var(--color-border-subtle);
+  background: var(--color-bg-secondary);
+  color: var(--color-text-secondary);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-3);
+  font: inherit;
+  cursor: pointer;
+}
+
+.period-overview__tab--active {
+  border-color: var(--color-accent);
+  color: var(--color-text-primary);
+  background: color-mix(in srgb, var(--color-accent) 12%, transparent);
+}
+
+.period-overview__loading {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.period-overview__loading p {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.period-overview__error {
+  margin: 0;
+  color: var(--color-danger);
+}
+
+.period-overview__content {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.period-overview__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.period-overview__meta h2 {
+  margin: 0;
+}
+
+.period-overview__meta a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.period-overview__goal-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--space-2);
+}
+
+.period-overview__goal-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-2);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-secondary);
+}
+
+.period-overview__goal-item p {
+  margin: var(--space-1) 0 0;
+  color: var(--color-text-secondary);
+}
+
+.period-overview__empty {
+  margin: 0;
+  color: var(--color-text-secondary);
+}

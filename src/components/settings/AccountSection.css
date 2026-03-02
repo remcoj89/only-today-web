@@ -1,0 +1,49 @@
+.settings-account {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.settings-account__header {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.settings-account__header h2 {
+  margin: 0;
+}
+
+.settings-account__header p {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.settings-account__block {
+  display: grid;
+  gap: var(--space-3);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--color-border);
+}
+
+.settings-account__block h3 {
+  margin: 0;
+}
+
+.settings-account__block p {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.settings-account__block--danger h3,
+.settings-account__block--danger p {
+  color: var(--color-danger);
+}
+
+.settings-account__modal {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.settings-account__modal p {
+  margin: 0;
+  color: var(--color-text-secondary);
+}

@@ -1,0 +1,80 @@
+.analytics-dashboard {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  gap: var(--space-4);
+}
+
+.analytics-dashboard__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+
+  h1 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    color: var(--color-text-secondary);
+  }
+}
+
+.analytics-dashboard__periods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.analytics-dashboard__state-card {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.analytics-dashboard__grid {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: 1fr;
+}
+
+.analytics-dashboard__adherence {
+  display: grid;
+  gap: var(--space-3);
+
+  h2 {
+    margin: 0;
+    font-size: var(--font-size-h3-mobile);
+  }
+
+  strong {
+    font-family: var(--font-mono);
+    font-size: var(--font-size-mono-mobile);
+    line-height: 1;
+  }
+
+  p {
+    margin: 0;
+    color: var(--color-text-secondary);
+  }
+}
+
+.analytics-dashboard__adherence-meta {
+  display: grid;
+  gap: var(--space-2);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+}
+
+@media (min-width: 768px) {
+  .analytics-dashboard__header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .analytics-dashboard__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

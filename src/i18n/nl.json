@@ -1,0 +1,481 @@
+{
+  "common": {
+    "save": "Opslaan",
+    "cancel": "Annuleren",
+    "delete": "Verwijderen",
+    "confirm": "Bevestigen",
+    "loading": "Laden...",
+    "offline": "Je bent offline - wijzigingen worden lokaal opgeslagen",
+    "syncing": "Synchroniseren...",
+    "synced": "Gesynchroniseerd",
+    "syncError": "Synchronisatie mislukt",
+    "syncConflict": "Er was een conflict",
+    "retry": "Opnieuw proberen"
+  },
+  "layout": {
+    "home": "Vandaag",
+    "planning": "Planning",
+    "calendar": "Kalender",
+    "analytics": "Analyse",
+    "accountability": "Buddy",
+    "settings": "Instellingen",
+    "logout": "Uitloggen",
+    "loggingOut": "Uitloggen...",
+    "streak": "Streak: {{count}} dagen",
+    "homeAria": "Only Today home",
+    "mainNavAria": "Hoofdnavigatie",
+    "mobileNavAria": "Mobiele navigatie",
+    "collapseSidebar": "Sluit zijbalk",
+    "expandSidebar": "Open zijbalk",
+    "currentStreakAria": "Huidige streak",
+    "settingsAria": "Ga naar instellingen",
+    "openMenu": "Open menu",
+    "todayIs": "Vandaag is {{date}}"
+  },
+  "auth": {
+    "login": "Inloggen",
+    "register": "Account aanmaken",
+    "forgotPassword": "Wachtwoord vergeten?",
+    "email": "E-mailadres",
+    "password": "Wachtwoord",
+    "confirmPassword": "Bevestig wachtwoord",
+    "sendResetLink": "Verstuur reset link",
+    "resetEmailConfirmation": "Check je inbox voor een reset-link.",
+    "backToLogin": "Terug naar inloggen",
+    "createAccountLink": "Account aanmaken",
+    "alreadyHaveAccount": "Al een account? Inloggen",
+    "acceptTerms": "Ik ga akkoord met de voorwaarden",
+    "linksAria": "Authenticatie links",
+    "sessionExpired": "Je sessie is verlopen. Log opnieuw in.",
+    "passwordStrength": {
+      "weak": "Wachtwoordsterkte: zwak",
+      "medium": "Wachtwoordsterkte: matig",
+      "strong": "Wachtwoordsterkte: sterk"
+    },
+    "errors": {
+      "emailRequired": "Vul je e-mailadres in.",
+      "emailInvalid": "Vul een geldig e-mailadres in.",
+      "passwordRequired": "Vul je wachtwoord in.",
+      "passwordMinLength": "Je wachtwoord moet minimaal 8 tekens bevatten.",
+      "confirmPasswordRequired": "Bevestig je wachtwoord.",
+      "confirmPasswordMismatch": "De wachtwoorden komen niet overeen.",
+      "termsRequired": "Je moet akkoord gaan met de voorwaarden.",
+      "invalidCredentials": "Ongeldige e-mail of wachtwoord.",
+      "emailNotConfirmed": "Bevestig eerst je e-mailadres en probeer opnieuw.",
+      "emailAlreadyRegistered": "Voor dit e-mailadres bestaat al een account.",
+      "generic": "Er ging iets mis. Probeer het opnieuw."
+    }
+  },
+  "onboarding": {
+    "loading": "Onboarding laden...",
+    "progress": {
+      "label": "Stap {{current}} van {{total}}",
+      "ariaLabel": "Onboarding voortgang"
+    },
+    "actions": {
+      "previous": "Vorige",
+      "next": "Volgende",
+      "beginQuarter": "Begin je kwartaal",
+      "startFirstDay": "Start je eerste dag"
+    },
+    "welcome": {
+      "title": "Welkom bij Only Today",
+      "subtitle": "Niet alles tegelijk. Vandaag scherp, morgen sterker.",
+      "bullets": {
+        "first": "Zet vandaag je EEN en DRIE helder neer.",
+        "second": "Werk in focusblokken en maak je dag bewust af.",
+        "third": "Bouw ritme op vanuit kwartaal, maand, week en dag."
+      }
+    },
+    "lifeWheel": {
+      "title": "Stap 2 — Levenswiel",
+      "description": "Score elke categorie van 1 tot 10. Zo zie je direct waar je aandacht nodig hebt.",
+      "categories": {
+        "work": "Werk",
+        "fun": "Plezier",
+        "social": "Sociaal",
+        "giving": "Geven",
+        "money": "Geld",
+        "growth": "Groei",
+        "health": "Gezondheid",
+        "love": "Liefde"
+      }
+    },
+    "goals": {
+      "title": "Stap 3 — Kwartaaldoelen",
+      "description": "Definieer precies drie doelen. Zonder drie titels kun je niet verder.",
+      "goalCard": "Doel {{index}}",
+      "goalTitle": "Titel",
+      "whatIsDifferent": "Wat is anders als ik dit bereikt heb?",
+      "consequencesIfNot": "Wat gebeurt er als ik het niet bereik?",
+      "rewardIfAchieved": "Welke beloning geef ik mezelf?",
+      "progress": "Voortgang",
+      "progressValue": "Voortgang: {{progress}}%"
+    },
+    "confirmation": {
+      "title": "Stap 4 — Bevestiging",
+      "description": "Dit is je startpunt. Controleer je scores en doelen en ga daarna je eerste dag in.",
+      "lifeWheel": "Levenswiel samenvatting",
+      "goals": "Doelen samenvatting"
+    },
+    "defaults": {
+      "goalFallback": "Onbenoemd doel"
+    },
+    "errors": {
+      "loadFailed": "We konden je onboardingstatus niet ophalen. Vernieuw de pagina en probeer opnieuw.",
+      "saveFailed": "We konden je onboarding niet opslaan. Probeer opnieuw.",
+      "goalTitleRequired": "Vul een titel in voor dit doel."
+    }
+  },
+  "planning": {
+    "overview": {
+      "title": "Planning",
+      "subtitle": "Bekijk je doelen per kwartaal, maand en week.",
+      "tabs": {
+        "quarter": "Kwartaal",
+        "month": "Maand",
+        "week": "Week"
+      },
+      "loading": "Planning laden...",
+      "empty": "Nog geen doelen voor deze periode.",
+      "viewDetails": "Bekijk details",
+      "error": "We konden de planning niet laden."
+    },
+    "quarter": {
+      "title": "Kwartaalplanning",
+      "subtitle": "Levenswiel en drie kwartaaldoelen.",
+      "lifeWheel": "Levenswiel",
+      "rescore": "Opnieuw scoren",
+      "goals": "Kwartaaldoelen",
+      "loading": "Kwartaal laden...",
+      "empty": "Nog geen kwartaaldoelen.",
+      "error": "We konden het kwartaal niet laden."
+    },
+    "month": {
+      "title": "Maandplanning",
+      "subtitle": "Maanddoelen gekoppeld aan je kwartaal.",
+      "addGoal": "Nieuw maanddoel",
+      "addGoalModalTitle": "Maanddoel toevoegen",
+      "editGoal": "Bewerken",
+      "editGoalModalTitle": "Maanddoel bewerken",
+      "deleteGoal": "Verwijderen",
+      "deleteGoalTitle": "Maanddoel verwijderen",
+      "deleteGoalDescription": "Weet je zeker dat je dit maanddoel wilt verwijderen?",
+      "formTitle": "Titel",
+      "formTitlePlaceholder": "Wat wil je deze maand bereiken?",
+      "formTitleRequired": "Vul een titel in",
+      "formDescription": "Beschrijving",
+      "formDescriptionPlaceholder": "Optioneel: meer details over je doel",
+      "formLinkedQuarter": "Gekoppeld kwartaaldoel",
+      "formLinkedQuarterNone": "Geen",
+      "loading": "Maand laden...",
+      "empty": "Je hebt nog geen doelen voor deze periode.",
+      "error": "We konden de maand niet laden."
+    },
+    "week": {
+      "title": "Weekplanning",
+      "subtitle": "Weekdoelen en dagstatus.",
+      "addGoal": "Nieuw weekdoel",
+      "addGoalModalTitle": "Weekdoel toevoegen",
+      "editGoal": "Bewerken",
+      "editGoalModalTitle": "Weekdoel bewerken",
+      "deleteGoal": "Verwijderen",
+      "deleteGoalTitle": "Weekdoel verwijderen",
+      "deleteGoalDescription": "Weet je zeker dat je dit weekdoel wilt verwijderen?",
+      "formTitle": "Titel",
+      "formTitlePlaceholder": "Wat wil je deze week bereiken?",
+      "formTitleRequired": "Vul een titel in",
+      "formDescription": "Beschrijving",
+      "formDescriptionPlaceholder": "Optioneel: meer details over je doel",
+      "formLinkedMonth": "Gekoppeld maanddoel",
+      "formLinkedMonthNone": "Geen",
+      "formAssignedDays": "Toewijzen aan dagen",
+      "dayShort": { "0": "Ma", "1": "Di", "2": "Wo", "3": "Do", "4": "Vr", "5": "Za", "6": "Zo" },
+      "agendaUnassigned": "Nog niet ingepland",
+      "agendaTitle": "Weekagenda",
+      "dayStatus": { "done": "Afgerond", "open": "Open", "missed": "Gemist" },
+      "loading": "Week laden...",
+      "empty": "Je hebt nog geen doelen voor deze periode.",
+      "error": "We konden de week niet laden."
+    }
+  },
+  "today": {
+    "title": "Vandaag",
+    "dayStart": "Dagstart",
+    "mindsetGratitude": "Ik ben dankbaar voor...",
+    "mindsetIntention": "Mijn intentie voor vandaag",
+    "oneThing": "Je EEN",
+    "topThree": "Je DRIE",
+    "closeDay": "Dag afronden"
+  },
+  "calendar": {
+    "title": "Kalender",
+    "subtitle": "Bekijk je ritme en open elke dag als read-only geschiedenis.",
+    "loading": "Kalender laden...",
+    "empty": "Nog geen kalenderdata beschikbaar.",
+    "views": {
+      "heatmap": "Heatmap",
+      "month": "Maandweergave"
+    },
+    "viewToggleAriaLabel": "Kalenderweergave wisselen",
+    "previousYear": "Vorig jaar",
+    "nextYear": "Volgend jaar",
+    "previousMonth": "Vorige maand",
+    "nextMonth": "Volgende maand",
+    "tooltip": "{{date}} - score {{score}}%",
+    "weekdays": {
+      "mon": "Ma",
+      "tue": "Di",
+      "wed": "Wo",
+      "thu": "Do",
+      "fri": "Vr",
+      "sat": "Za",
+      "sun": "Zo"
+    },
+    "status": {
+      "open": "Open",
+      "closed": "Afgesloten",
+      "auto_closed": "Automatisch gesloten",
+      "empty": "Geen data"
+    },
+    "errors": {
+      "loadFailed": "We konden je kalender niet laden. Probeer opnieuw.",
+      "loadDayFailed": "We konden de dagdetails niet laden. Probeer opnieuw."
+    },
+    "dayDetail": {
+      "title": "Dagdetails",
+      "titleWithDate": "Dagdetails - {{date}}",
+      "loading": "Dagdetails laden...",
+      "empty": "Geen data beschikbaar voor deze dag.",
+      "score": "Score",
+      "notFilled": "Niet ingevuld",
+      "sections": {
+        "dayStart": "Dagstart score",
+        "mindset": "Mindset",
+        "oneAndThree": "EEN + DRIE",
+        "lifePillars": "Levenszagen",
+        "reflection": "Reflectie"
+      }
+    }
+  },
+  "analytics": {
+    "page": {
+      "ariaLabel": "Analytics dashboard",
+      "title": "Analyse",
+      "subtitle": "Bekijk je ritme en gedragspatronen over tijd.",
+      "loading": "Analytics laden...",
+      "refresh": "Vernieuwen",
+      "empty": "Nog geen analytics data beschikbaar voor deze periode."
+    },
+    "period": {
+      "ariaLabel": "Periode selectie",
+      "7d": "7 dagen",
+      "30d": "30 dagen",
+      "quarter": "Kwartaal"
+    },
+    "pillars": {
+      "training": "Training",
+      "deepRelaxation": "Diepe ontspanning",
+      "healthyNutrition": "Gezonde voeding",
+      "realConnection": "Echte connectie"
+    },
+    "cards": {
+      "emptyTitle": "Nog geen data",
+      "emptyDescription": "Sluit dagen af en rond pomodoro's af om inzichten te zien.",
+      "completion": {
+        "title": "Dag-afsluiting trend",
+        "subtitle": "Completeness score over de gekozen periode."
+      },
+      "dayStart": {
+        "title": "Dagstart adherence",
+        "subtitle": "Percentage dagen met complete dagstart."
+      },
+      "dayClose": {
+        "label": "Dag-afsluiting checklist"
+      },
+      "completionAverage": {
+        "label": "Gemiddelde completion"
+      },
+      "pomodoro": {
+        "title": "Pomodoro's gepland vs gedaan",
+        "subtitle": "Laatste 10 meetpunten binnen de gekozen periode.",
+        "planned": "Gepland",
+        "done": "Gedaan"
+      },
+      "streaks": {
+        "title": "Streaks",
+        "dayClosed": "Dag afgesloten",
+        "allPillars": "Alle pijlers",
+        "perPillar": "Per pijler",
+        "days": "dagen op rij"
+      },
+      "pillars": {
+        "title": "Levenszagen adherence",
+        "subtitle": "Hoe consistent je per pijler afvinkt."
+      },
+      "correlation": {
+        "title": "Correlatie-inzicht",
+        "subtitle": "Verband tussen dagstart en dag-afsluiting.",
+        "insight": "Als je dagstart compleet was, sloot je {{percentage}}% vaker je dag af.",
+        "startMetric": "Complete dagstarten",
+        "endMetric": "Afgesloten dagen"
+      }
+    },
+    "errors": {
+      "loadFailed": "We konden je analytics niet laden. Probeer opnieuw."
+    }
+  },
+  "accountability": {
+    "page": {
+      "ariaLabel": "Accountability pagina",
+      "title": "Buddy",
+      "subtitle": "Houd elkaar scherp met dagelijkse check-ins en status op hoofdlijnen.",
+      "loading": "Buddy-overzicht laden...",
+      "refresh": "Vernieuwen"
+    },
+    "setup": {
+      "ariaLabel": "Buddy koppelen",
+      "emptyTitle": "Nog geen buddy gekoppeld",
+      "emptyDescription": "Koppel een buddy en bouw samen ritme op. Niet uitstellen, vandaag starten.",
+      "inviteTitle": "Nodig een buddy uit",
+      "inviteDescription": "Stuur een uitnodiging op basis van e-mailadres.",
+      "emailLabel": "E-mailadres van je buddy",
+      "emailPlaceholder": "buddy@voorbeeld.nl",
+      "sendInvite": "Uitnodiging versturen",
+      "inviteHint": "Na versturen verschijnt de aanvraag hieronder bij openstaande verzoeken.",
+      "requestsTitle": "Openstaande verzoeken",
+      "incomingTitle": "Ontvangen",
+      "outgoingTitle": "Verstuurd",
+      "noIncoming": "Geen ontvangen verzoeken.",
+      "noOutgoing": "Geen verstuurde verzoeken.",
+      "requestFrom": "Van gebruiker {{userId}}",
+      "requestTo": "Naar gebruiker {{userId}}",
+      "accept": "Accepteren",
+      "reject": "Weigeren",
+      "pending": "In afwachting"
+    },
+    "partner": {
+      "ariaLabel": "Partnerstatus",
+      "title": "Status van je buddy",
+      "unknownEmail": "E-mailadres niet beschikbaar",
+      "streakLabel": "Partner streak",
+      "streakDays": "dagen op rij",
+      "dayClosed": "Dag afgesloten",
+      "oneDone": "Je EEN gedaan",
+      "reflectionDone": "Reflectie ingevuld"
+    },
+    "checkin": {
+      "ariaLabel": "Check-in versturen",
+      "title": "Dagelijkse check-in",
+      "subtitle": "Stuur maximaal een bericht per dag (max 500 karakters).",
+      "messageLabel": "Jouw check-in",
+      "placeholder": "Wat heb je vandaag gedaan en waar loop je op vast?",
+      "send": "Verstuur check-in",
+      "alreadySent": "Vandaag al verstuurd",
+      "sent": "Check-in verstuurd."
+    },
+    "history": {
+      "ariaLabel": "Check-in geschiedenis",
+      "title": "Geschiedenis",
+      "empty": "Nog geen check-ins beschikbaar.",
+      "you": "Jij",
+      "partner": "Buddy"
+    },
+    "errors": {
+      "emailRequired": "Vul het e-mailadres van je buddy in.",
+      "messageRequired": "Vul eerst een bericht in.",
+      "generic": "We konden deze actie niet uitvoeren. Probeer opnieuw."
+    }
+  },
+  "settings": {
+    "page": {
+      "ariaLabel": "Instellingen pagina",
+      "title": "Instellingen",
+      "subtitle": "Beheer je profiel, notificaties en account."
+    },
+    "profile": {
+      "title": "Profiel",
+      "description": "Je persoonlijke gegevens.",
+      "nameLabel": "Naam",
+      "emailLabel": "E-mailadres",
+      "errors": {
+        "nameRequired": "Vul je naam in."
+      }
+    },
+    "notifications": {
+      "title": "Notificaties",
+      "description": "Stel herinneringen en meldingen in.",
+      "dayStartReminder": "Dagstart herinnering",
+      "dayCloseReminder": "Dag afronden herinnering",
+      "pushEnabled": "Pushnotificaties",
+      "emailEscalations": "E-mail escalaties",
+      "timeLabel": "Tijd",
+      "errors": {
+        "invalidTime": "Ongeldig tijdformaat (HH:MM)."
+      }
+    },
+    "theme": {
+      "title": "Thema",
+      "description": "Kies je licht- of donkere weergave.",
+      "light": "Licht",
+      "dark": "Donker",
+      "system": "Systeem"
+    },
+    "language": {
+      "title": "Taal",
+      "description": "Kies je voorkeurstaal.",
+      "label": "Taal",
+      "nl": "Nederlands",
+      "en": "English",
+      "de": "Deutsch"
+    },
+    "account": {
+      "title": "Account",
+      "description": "Tijdzone, wachtwoord en account verwijderen.",
+      "timezoneLabel": "Tijdzone",
+      "timezoneHelp": "Je tijden worden weergegeven in deze tijdzone.",
+      "saveTimezone": "Tijdzone opslaan",
+      "passwordTitle": "Wachtwoord wijzigen",
+      "passwordDescription": "Kies een sterk wachtwoord van minimaal 8 tekens.",
+      "currentPassword": "Huidige wachtwoord",
+      "newPassword": "Nieuw wachtwoord",
+      "changePassword": "Wachtwoord wijzigen",
+      "deleting": "Account verwijderen...",
+      "deleteTitle": "Account verwijderen",
+      "deleteDescription": "Dit verwijdert permanent al je accountgegevens en kan niet ongedaan worden gemaakt.",
+      "deleteAction": "Account verwijderen",
+      "deleteConfirmTitle": "Account verwijderen?",
+      "deleteConfirmDescription": "Typ DELETE om te bevestigen.",
+      "deleteSecondStepTitle": "Bevestiging",
+      "deleteSecondStepDescription": "Typ DELETE om je account definitief te verwijderen.",
+      "deleteSecondStepLabel": "Typ DELETE",
+      "deleteSecondStepPlaceholder": "DELETE",
+      "errors": {
+        "passwordRequired": "Vul je wachtwoord in.",
+        "passwordTooShort": "Je wachtwoord moet minimaal 8 tekens bevatten.",
+        "deleteConfirmation": "Typ DELETE om te bevestigen."
+      }
+    },
+    "messages": {
+      "loadError": "We konden je instellingen niet laden. Probeer opnieuw.",
+      "loading": "Instellingen laden...",
+      "profileSaved": "Profiel opgeslagen.",
+      "profileSaveError": "Profiel kon niet worden opgeslagen.",
+      "notificationsSaved": "Notificaties opgeslagen.",
+      "notificationsSaveError": "Notificaties konden niet worden opgeslagen.",
+      "themeSaved": "Thema opgeslagen.",
+      "languageSaved": "Taal opgeslagen.",
+      "timezoneSaved": "Tijdzone opgeslagen.",
+      "timezoneSaveError": "Tijdzone kon niet worden opgeslagen.",
+      "passwordSaved": "Wachtwoord gewijzigd.",
+      "passwordSaveError": "Wachtwoord kon niet worden gewijzigd.",
+      "deleteError": "Account kon niet worden verwijderd."
+    }
+  },
+  "pomodoro": {
+    "focusComplete": "Focusblok afgerond",
+    "breakStarted": "Pauze gestart",
+    "breakComplete": "Pauze afgerond",
+    "timeRemaining": "Resterende tijd: {{time}}"
+  }
+}

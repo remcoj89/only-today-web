@@ -1,0 +1,18 @@
+.day-close-flow__step-indicator {
+  margin-bottom: var(--space-3);
+  color: var(--color-text-secondary);
+}
+
+.day-close-flow__warning {
+  margin-top: 0;
+  margin-bottom: var(--space-3);
+  color: var(--color-warning);
+}
+
+.day-close-flow__footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  justify-content: flex-end;
+}
+

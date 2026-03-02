@@ -1,0 +1,14 @@
+---
+import AppShell from "@/components/layout/AppShell.astro";
+---
+
+<AppShell title="Only Today" requiresAuth={false}>
+  <section>
+    <h1>Welkom bij Only Today</h1>
+    <p>Je wordt doorgestuurd naar het dagscherm.</p>
+    <p><a href="/today">Ga direct naar vandaag</a></p>
+  </section>
+  <script is:inline>
+    window.location.replace("/today");
+  </script>
+</AppShell>

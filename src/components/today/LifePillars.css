@@ -1,0 +1,77 @@
+.today-pillars {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.today-pillars__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.today-pillars__title,
+.today-pillars__progress {
+  margin: 0;
+}
+
+.today-pillars__progress {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+}
+
+.today-pillars__grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+
+@media (min-width: 768px) {
+  .today-pillars__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.today-pillars__card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: transparent;
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.today-pillars__card--active {
+  background: var(--color-accent-subtle);
+  border-color: var(--color-accent);
+}
+
+.today-pillars__card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.today-pillars__label {
+  font-weight: 500;
+}
+
+.today-pillars__card-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.today-pillars__input {
+  flex: 1;
+}
+
+.today-pillars__checkbox {
+  margin-top: var(--space-1);
+}
+
+.today-pillars__emoji {
+  font-size: 1.25rem;
+}
+

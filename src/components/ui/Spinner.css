@@ -1,0 +1,38 @@
+.ui-spinner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ui-spinner__ring {
+  display: block;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--color-border);
+  border-top-color: var(--color-accent);
+  animation: ui-spinner-rotate 800ms linear infinite;
+}
+
+.ui-spinner--sm .ui-spinner__ring {
+  width: 12px;
+  height: 12px;
+}
+
+.ui-spinner--md .ui-spinner__ring {
+  width: 16px;
+  height: 16px;
+}
+
+.ui-spinner--lg .ui-spinner__ring {
+  width: 20px;
+  height: 20px;
+}
+
+@keyframes ui-spinner-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

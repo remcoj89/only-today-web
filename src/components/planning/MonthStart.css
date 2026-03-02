@@ -1,0 +1,58 @@
+.month-start {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  display: grid;
+  gap: var(--space-4);
+}
+
+.month-start__header h1 {
+  margin: 0;
+}
+
+.month-start__header p {
+  margin: var(--space-1) 0 0;
+  color: var(--color-text-secondary);
+}
+
+.month-start__loading {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.month-start__loading p,
+.month-start__empty {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.month-start__actions {
+  display: inline-flex;
+  gap: var(--space-2);
+}
+
+.month-start__goal-list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.month-start__error {
+  margin: 0;
+  color: var(--color-danger);
+}
+
+.month-start__error-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.month-start__error-row .month-start__error {
+  flex: 1;
+}
+
+.month-start__add-form {
+  display: grid;
+  gap: var(--space-3);
+}

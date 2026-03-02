@@ -1,0 +1,8 @@
+.ui-confirm-dialog {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.ui-confirm-dialog__description {
+  color: var(--color-text-secondary);
+}

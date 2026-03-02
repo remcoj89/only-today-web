@@ -1,0 +1,107 @@
+.week-start {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  display: grid;
+  gap: var(--space-4);
+}
+
+.week-start__header h1 {
+  margin: 0;
+}
+
+.week-start__header p {
+  margin: var(--space-1) 0 0;
+  color: var(--color-text-secondary);
+}
+
+.week-start__loading {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.week-start__loading p,
+.week-start__empty {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.week-start__status-strip {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+
+.week-start__status {
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border-subtle);
+  min-height: 44px;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+}
+
+.week-start__status--done {
+  background: color-mix(in srgb, var(--color-success) 22%, transparent);
+  border-color: var(--color-success);
+}
+
+.week-start__status--missed {
+  background: color-mix(in srgb, var(--color-danger) 22%, transparent);
+  border-color: var(--color-danger);
+}
+
+.week-start__status--open {
+  background: var(--color-bg-secondary);
+}
+
+.week-start__actions {
+  display: inline-flex;
+  gap: var(--space-2);
+}
+
+.week-start__goal-list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.week-start__error {
+  margin: 0;
+  color: var(--color-danger);
+}
+
+.week-start__error-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.week-start__error-row .week-start__error {
+  flex: 1;
+}
+
+.week-start__add-form {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.week-start__form-days {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.week-start__form-days-label {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.week-start__form-days-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.week-start__form-day {
+  flex: 0 0 auto;
+}

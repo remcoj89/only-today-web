@@ -1,0 +1,109 @@
+.task-item {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-elevated);
+  padding: var(--space-4);
+  display: grid;
+  gap: var(--space-3);
+}
+
+.task-item--one {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-glow);
+}
+
+.task-item__heading {
+  margin: 0;
+  font-size: var(--font-size-h3-mobile);
+}
+
+.task-item__title-input,
+.task-item__description {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-elevated);
+  padding: var(--space-2) var(--space-3);
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--color-text-primary);
+}
+
+.task-item__title-input::placeholder,
+.task-item__description::placeholder {
+  color: var(--color-text-muted);
+}
+
+.task-item__title-input:focus-visible,
+.task-item__description:focus-visible {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.task-item__description {
+  min-height: 60px;
+  resize: vertical;
+}
+
+.task-item__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.task-item__pomodoro-groups {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.task-item__pomodoro-row {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.task-item__pomodoro-label {
+  font-size: var(--font-size-small);
+  color: var(--color-text-secondary);
+}
+
+.task-item__tomato-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.task-item__tomato {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  background: transparent;
+  cursor: pointer;
+  transition: transform var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.task-item__tomato:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.task-item__tomato:hover:not(:disabled) {
+  transform: scale(1.08);
+}
+
+.task-item__tomato--planned.task-item__tomato--active {
+  background: var(--color-accent-subtle);
+  border-color: var(--color-accent);
+}
+
+.task-item__tomato--done.task-item__tomato--active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.task-item__status {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+}

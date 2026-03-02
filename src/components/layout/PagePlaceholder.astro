@@ -1,0 +1,13 @@
+---
+type Props = {
+  title: string;
+  description?: string;
+};
+
+const { title, description = "Deze pagina is voorbereid in Fase 0." } = Astro.props;
+---
+
+<section>
+  <h1>{title}</h1>
+  <p>{description}</p>
+</section>

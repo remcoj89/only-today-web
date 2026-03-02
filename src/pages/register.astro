@@ -1,0 +1,12 @@
+---
+import AuthPageLayout from "@/components/auth/AuthPageLayout.astro";
+import { RegisterForm } from "@/components/auth/RegisterForm";
+---
+
+<AuthPageLayout
+  title="Registreren | Only Today"
+  heading="Start sterk"
+  description="Maak je account aan en zet direct je kwartaalkoers uit."
+>
+  <RegisterForm client:only="react" />
+</AuthPageLayout>

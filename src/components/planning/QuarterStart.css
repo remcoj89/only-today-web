@@ -1,0 +1,61 @@
+.quarter-start {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  display: grid;
+  gap: var(--space-4);
+}
+
+.quarter-start__header h1 {
+  margin: 0;
+}
+
+.quarter-start__header p {
+  margin: var(--space-1) 0 0;
+  color: var(--color-text-secondary);
+}
+
+.quarter-start__life-wheel,
+.quarter-start__goals {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.quarter-start__life-wheel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.quarter-start__life-wheel-head h2,
+.quarter-start__goals h2 {
+  margin: 0;
+}
+
+.quarter-start__life-wheel-actions {
+  display: inline-flex;
+  gap: var(--space-2);
+}
+
+.quarter-start__goal-list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.quarter-start__loading {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.quarter-start__loading p,
+.quarter-start__empty {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.quarter-start__error {
+  margin: 0;
+  color: var(--color-danger);
+}

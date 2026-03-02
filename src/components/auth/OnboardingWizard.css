@@ -1,0 +1,185 @@
+.onboarding-wizard {
+  min-height: 100vh;
+  padding: var(--space-6) var(--space-4) calc(var(--space-10) + env(safe-area-inset-bottom));
+  background:
+    radial-gradient(circle at top, color-mix(in srgb, var(--color-accent) 18%, transparent), transparent 45%),
+    var(--color-bg-primary);
+  color: var(--color-text-primary);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: var(--space-6);
+}
+
+.onboarding-wizard--loading {
+  place-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.onboarding-wizard__header {
+  width: min(960px, 100%);
+  margin: 0 auto;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.onboarding-wizard__step-label {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+}
+
+.onboarding-wizard__progress-track {
+  height: 8px;
+  border-radius: var(--radius-full);
+  background: color-mix(in srgb, var(--color-accent) 20%, var(--color-bg-elevated));
+  overflow: hidden;
+}
+
+.onboarding-wizard__progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-hover));
+  transition: width var(--transition-base);
+}
+
+.onboarding-wizard__progress-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: var(--space-3);
+}
+
+.onboarding-wizard__progress-step {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-elevated);
+  display: grid;
+  place-items: center;
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.onboarding-wizard__progress-step--active {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: #071333;
+  font-weight: var(--font-weight-semibold);
+}
+
+.onboarding-wizard__content {
+  width: min(960px, 100%);
+  margin: 0 auto;
+  animation: onboarding-fade var(--transition-base);
+}
+
+.onboarding-wizard__panel {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-5);
+  display: grid;
+  gap: var(--space-4);
+}
+
+.onboarding-wizard__panel h1,
+.onboarding-wizard__panel h2,
+.onboarding-wizard__panel h3 {
+  margin: 0;
+  color: var(--color-text-primary);
+}
+
+.onboarding-wizard__panel h1,
+.onboarding-wizard__panel h2 {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-regular);
+}
+
+.onboarding-wizard__panel p {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.onboarding-wizard__bullets {
+  margin: 0;
+  padding-inline-start: var(--space-5);
+  display: grid;
+  gap: var(--space-2);
+  color: var(--color-text-primary);
+}
+
+.onboarding-wizard__summary {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.onboarding-wizard__summary-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-elevated);
+  padding: var(--space-4);
+  display: grid;
+  gap: var(--space-3);
+}
+
+.onboarding-wizard__goal-summary {
+  margin: 0;
+  padding-inline-start: var(--space-4);
+  display: grid;
+  gap: var(--space-2);
+}
+
+.onboarding-wizard__goal-summary li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  color: var(--color-text-primary);
+}
+
+.onboarding-wizard__goal-summary span {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+}
+
+.onboarding-wizard__error {
+  margin: 0 auto;
+  width: min(960px, 100%);
+  color: var(--color-error);
+}
+
+.onboarding-wizard__actions {
+  width: min(960px, 100%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+@keyframes onboarding-fade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .onboarding-wizard {
+    padding: var(--space-8) var(--space-6);
+  }
+
+  .onboarding-wizard__panel {
+    padding: var(--space-6);
+  }
+
+  .onboarding-wizard__summary {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}

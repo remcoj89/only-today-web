@@ -1,0 +1,21 @@
+.page-transition {
+  animation: page-transition-enter var(--transition-base) cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+@keyframes page-transition-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-transition {
+    animation: none;
+  }
+}

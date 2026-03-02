@@ -1,0 +1,481 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "loading": "Loading...",
+    "offline": "You are offline - changes are stored locally",
+    "syncing": "Syncing...",
+    "synced": "Synced",
+    "syncError": "Sync failed",
+    "syncConflict": "There was a conflict",
+    "retry": "Retry"
+  },
+  "layout": {
+    "home": "Today",
+    "planning": "Planning",
+    "calendar": "Calendar",
+    "analytics": "Analytics",
+    "accountability": "Buddy",
+    "settings": "Settings",
+    "logout": "Log out",
+    "loggingOut": "Logging out...",
+    "streak": "Streak: {{count}} days",
+    "homeAria": "Only Today home",
+    "mainNavAria": "Main navigation",
+    "mobileNavAria": "Mobile navigation",
+    "collapseSidebar": "Collapse sidebar",
+    "expandSidebar": "Expand sidebar",
+    "currentStreakAria": "Current streak",
+    "settingsAria": "Go to settings",
+    "openMenu": "Open menu",
+    "todayIs": "Today is {{date}}"
+  },
+  "auth": {
+    "login": "Log in",
+    "register": "Create account",
+    "forgotPassword": "Forgot password?",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "sendResetLink": "Send reset link",
+    "resetEmailConfirmation": "Check your inbox for a reset link.",
+    "backToLogin": "Back to login",
+    "createAccountLink": "Create account",
+    "alreadyHaveAccount": "Already have an account? Log in",
+    "acceptTerms": "I agree to the terms",
+    "linksAria": "Authentication links",
+    "sessionExpired": "Your session expired. Please log in again.",
+    "passwordStrength": {
+      "weak": "Password strength: weak",
+      "medium": "Password strength: medium",
+      "strong": "Password strength: strong"
+    },
+    "errors": {
+      "emailRequired": "Enter your email address.",
+      "emailInvalid": "Enter a valid email address.",
+      "passwordRequired": "Enter your password.",
+      "passwordMinLength": "Your password must be at least 8 characters.",
+      "confirmPasswordRequired": "Confirm your password.",
+      "confirmPasswordMismatch": "Passwords do not match.",
+      "termsRequired": "You must accept the terms.",
+      "invalidCredentials": "Invalid email or password.",
+      "emailNotConfirmed": "Confirm your email first, then try again.",
+      "emailAlreadyRegistered": "An account already exists for this email address.",
+      "generic": "Something went wrong. Please try again."
+    }
+  },
+  "onboarding": {
+    "loading": "Loading onboarding...",
+    "progress": {
+      "label": "Step {{current}} of {{total}}",
+      "ariaLabel": "Onboarding progress"
+    },
+    "actions": {
+      "previous": "Previous",
+      "next": "Next",
+      "beginQuarter": "Begin your quarter",
+      "startFirstDay": "Start your first day"
+    },
+    "welcome": {
+      "title": "Welcome to Only Today",
+      "subtitle": "Not everything at once. Sharp today, stronger tomorrow.",
+      "bullets": {
+        "first": "Define your ONE and THREE for today.",
+        "second": "Work in focus blocks and close your day with intent.",
+        "third": "Build rhythm through quarter, month, week, and day."
+      }
+    },
+    "lifeWheel": {
+      "title": "Step 2 — Life wheel",
+      "description": "Score each category from 1 to 10 so you instantly see where attention is needed.",
+      "categories": {
+        "work": "Work",
+        "fun": "Fun",
+        "social": "Social",
+        "giving": "Giving",
+        "money": "Money",
+        "growth": "Growth",
+        "health": "Health",
+        "love": "Love"
+      }
+    },
+    "goals": {
+      "title": "Step 3 — Quarter goals",
+      "description": "Define exactly three goals. You cannot continue without all three titles.",
+      "goalCard": "Goal {{index}}",
+      "goalTitle": "Title",
+      "whatIsDifferent": "What is different when I achieve this?",
+      "consequencesIfNot": "What happens if I do not achieve this?",
+      "rewardIfAchieved": "What reward will I give myself?",
+      "progress": "Progress",
+      "progressValue": "Progress: {{progress}}%"
+    },
+    "confirmation": {
+      "title": "Step 4 — Confirmation",
+      "description": "This is your starting point. Review your scores and goals, then start your first day.",
+      "lifeWheel": "Life wheel summary",
+      "goals": "Goals summary"
+    },
+    "defaults": {
+      "goalFallback": "Untitled goal"
+    },
+    "errors": {
+      "loadFailed": "We could not load your onboarding status. Refresh and try again.",
+      "saveFailed": "We could not save your onboarding. Please try again.",
+      "goalTitleRequired": "Enter a title for this goal."
+    }
+  },
+  "planning": {
+    "overview": {
+      "title": "Planning",
+      "subtitle": "View your goals by quarter, month and week.",
+      "tabs": {
+        "quarter": "Quarter",
+        "month": "Month",
+        "week": "Week"
+      },
+      "loading": "Loading planning...",
+      "empty": "No goals for this period yet.",
+      "viewDetails": "View details",
+      "error": "We could not load the planning."
+    },
+    "quarter": {
+      "title": "Quarter planning",
+      "subtitle": "Life wheel and three quarter goals.",
+      "lifeWheel": "Life wheel",
+      "rescore": "Rescore",
+      "goals": "Quarter goals",
+      "loading": "Loading quarter...",
+      "empty": "No quarter goals yet.",
+      "error": "We could not load the quarter."
+    },
+    "month": {
+      "title": "Month planning",
+      "subtitle": "Month goals linked to your quarter.",
+      "addGoal": "Add month goal",
+      "addGoalModalTitle": "Add month goal",
+      "editGoal": "Edit",
+      "editGoalModalTitle": "Edit month goal",
+      "deleteGoal": "Delete",
+      "deleteGoalTitle": "Delete month goal",
+      "deleteGoalDescription": "Are you sure you want to delete this month goal?",
+      "formTitle": "Title",
+      "formTitlePlaceholder": "What do you want to achieve this month?",
+      "formTitleRequired": "Please enter a title",
+      "formDescription": "Description",
+      "formDescriptionPlaceholder": "Optional: more details about your goal",
+      "formLinkedQuarter": "Linked quarter goal",
+      "formLinkedQuarterNone": "None",
+      "loading": "Loading month...",
+      "empty": "You don't have any goals for this period yet.",
+      "error": "We could not load the month."
+    },
+    "week": {
+      "title": "Week planning",
+      "subtitle": "Week goals and day status.",
+      "addGoal": "Add week goal",
+      "addGoalModalTitle": "Add week goal",
+      "editGoal": "Edit",
+      "editGoalModalTitle": "Edit week goal",
+      "deleteGoal": "Delete",
+      "deleteGoalTitle": "Delete week goal",
+      "deleteGoalDescription": "Are you sure you want to delete this week goal?",
+      "formTitle": "Title",
+      "formTitlePlaceholder": "What do you want to achieve this week?",
+      "formTitleRequired": "Please enter a title",
+      "formDescription": "Description",
+      "formDescriptionPlaceholder": "Optional: more details about your goal",
+      "formLinkedMonth": "Linked month goal",
+      "formLinkedMonthNone": "None",
+      "formAssignedDays": "Assign to days",
+      "dayShort": { "0": "Mon", "1": "Tue", "2": "Wed", "3": "Thu", "4": "Fri", "5": "Sat", "6": "Sun" },
+      "agendaUnassigned": "Not yet scheduled",
+      "agendaTitle": "Week agenda",
+      "dayStatus": { "done": "Done", "open": "Open", "missed": "Missed" },
+      "loading": "Loading week...",
+      "empty": "You don't have any goals for this period yet.",
+      "error": "We could not load the week."
+    }
+  },
+  "today": {
+    "title": "Today",
+    "dayStart": "Start the day",
+    "mindsetGratitude": "I am grateful for...",
+    "mindsetIntention": "My intention for today",
+    "oneThing": "Your ONE",
+    "topThree": "Your THREE",
+    "closeDay": "Close day"
+  },
+  "calendar": {
+    "title": "Calendar",
+    "subtitle": "Review your rhythm and open each day as read-only history.",
+    "loading": "Loading calendar...",
+    "empty": "No calendar data available yet.",
+    "views": {
+      "heatmap": "Heatmap",
+      "month": "Month view"
+    },
+    "viewToggleAriaLabel": "Switch calendar view",
+    "previousYear": "Previous year",
+    "nextYear": "Next year",
+    "previousMonth": "Previous month",
+    "nextMonth": "Next month",
+    "tooltip": "{{date}} - score {{score}}%",
+    "weekdays": {
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat",
+      "sun": "Sun"
+    },
+    "status": {
+      "open": "Open",
+      "closed": "Closed",
+      "auto_closed": "Auto-closed",
+      "empty": "No data"
+    },
+    "errors": {
+      "loadFailed": "We could not load your calendar. Please try again.",
+      "loadDayFailed": "We could not load day details. Please try again."
+    },
+    "dayDetail": {
+      "title": "Day details",
+      "titleWithDate": "Day details - {{date}}",
+      "loading": "Loading day details...",
+      "empty": "No data available for this day.",
+      "score": "Score",
+      "notFilled": "Not filled in",
+      "sections": {
+        "dayStart": "Day start score",
+        "mindset": "Mindset",
+        "oneAndThree": "ONE + THREE",
+        "lifePillars": "Life pillars",
+        "reflection": "Reflection"
+      }
+    }
+  },
+  "analytics": {
+    "page": {
+      "ariaLabel": "Analytics dashboard",
+      "title": "Analytics",
+      "subtitle": "Review your rhythm and behavioral patterns over time.",
+      "loading": "Loading analytics...",
+      "refresh": "Refresh",
+      "empty": "No analytics data available for this period yet."
+    },
+    "period": {
+      "ariaLabel": "Period selection",
+      "7d": "7 days",
+      "30d": "30 days",
+      "quarter": "Quarter"
+    },
+    "pillars": {
+      "training": "Training",
+      "deepRelaxation": "Deep relaxation",
+      "healthyNutrition": "Healthy nutrition",
+      "realConnection": "Real connection"
+    },
+    "cards": {
+      "emptyTitle": "No data yet",
+      "emptyDescription": "Close days and complete pomodoros to unlock insights.",
+      "completion": {
+        "title": "Day close trend",
+        "subtitle": "Completeness score across the selected period."
+      },
+      "dayStart": {
+        "title": "Day start adherence",
+        "subtitle": "Percentage of days with a complete day start."
+      },
+      "dayClose": {
+        "label": "Day close checklist"
+      },
+      "completionAverage": {
+        "label": "Average completion"
+      },
+      "pomodoro": {
+        "title": "Pomodoros planned vs done",
+        "subtitle": "Latest 10 data points inside the selected period.",
+        "planned": "Planned",
+        "done": "Done"
+      },
+      "streaks": {
+        "title": "Streaks",
+        "dayClosed": "Day closed",
+        "allPillars": "All pillars",
+        "perPillar": "Per pillar",
+        "days": "days in a row"
+      },
+      "pillars": {
+        "title": "Life pillars adherence",
+        "subtitle": "How consistently you complete each pillar."
+      },
+      "correlation": {
+        "title": "Correlation insight",
+        "subtitle": "Relationship between day start and day close.",
+        "insight": "When your day start was complete, you closed your day {{percentage}}% more often.",
+        "startMetric": "Complete day starts",
+        "endMetric": "Closed days"
+      }
+    },
+    "errors": {
+      "loadFailed": "We could not load your analytics. Please try again."
+    }
+  },
+  "accountability": {
+    "page": {
+      "ariaLabel": "Accountability page",
+      "title": "Buddy",
+      "subtitle": "Keep each other sharp with daily check-ins and high-level status.",
+      "loading": "Loading buddy overview...",
+      "refresh": "Refresh"
+    },
+    "setup": {
+      "ariaLabel": "Buddy setup",
+      "emptyTitle": "No buddy linked yet",
+      "emptyDescription": "Link a buddy and build rhythm together. Do not postpone, start today.",
+      "inviteTitle": "Invite a buddy",
+      "inviteDescription": "Send an invitation using their email address.",
+      "emailLabel": "Buddy email",
+      "emailPlaceholder": "buddy@example.com",
+      "sendInvite": "Send invite",
+      "inviteHint": "After sending, the request appears below in pending requests.",
+      "requestsTitle": "Pending requests",
+      "incomingTitle": "Incoming",
+      "outgoingTitle": "Outgoing",
+      "noIncoming": "No incoming requests.",
+      "noOutgoing": "No outgoing requests.",
+      "requestFrom": "From user {{userId}}",
+      "requestTo": "To user {{userId}}",
+      "accept": "Accept",
+      "reject": "Reject",
+      "pending": "Pending"
+    },
+    "partner": {
+      "ariaLabel": "Partner status",
+      "title": "Your buddy status",
+      "unknownEmail": "Email unavailable",
+      "streakLabel": "Partner streak",
+      "streakDays": "days in a row",
+      "dayClosed": "Day closed",
+      "oneDone": "ONE completed",
+      "reflectionDone": "Reflection completed"
+    },
+    "checkin": {
+      "ariaLabel": "Send check-in",
+      "title": "Daily check-in",
+      "subtitle": "Send at most one message per day (max 500 characters).",
+      "messageLabel": "Your check-in",
+      "placeholder": "What did you do today and where are you stuck?",
+      "send": "Send check-in",
+      "alreadySent": "Already sent today",
+      "sent": "Check-in sent."
+    },
+    "history": {
+      "ariaLabel": "Check-in history",
+      "title": "History",
+      "empty": "No check-ins yet.",
+      "you": "You",
+      "partner": "Buddy"
+    },
+    "errors": {
+      "emailRequired": "Enter your buddy email.",
+      "messageRequired": "Enter a message first.",
+      "generic": "We could not complete this action. Please try again."
+    }
+  },
+  "settings": {
+    "page": {
+      "ariaLabel": "Settings page",
+      "title": "Settings",
+      "subtitle": "Manage your profile, notifications and account."
+    },
+    "profile": {
+      "title": "Profile",
+      "description": "Your personal information.",
+      "nameLabel": "Name",
+      "emailLabel": "Email address",
+      "errors": {
+        "nameRequired": "Enter your name."
+      }
+    },
+    "notifications": {
+      "title": "Notifications",
+      "description": "Configure reminders and notifications.",
+      "dayStartReminder": "Day start reminder",
+      "dayCloseReminder": "Day close reminder",
+      "pushEnabled": "Push notifications",
+      "emailEscalations": "Email escalations",
+      "timeLabel": "Time",
+      "errors": {
+        "invalidTime": "Invalid time format (HH:MM)."
+      }
+    },
+    "theme": {
+      "title": "Theme",
+      "description": "Choose your light or dark appearance.",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "language": {
+      "title": "Language",
+      "description": "Choose your preferred language.",
+      "label": "Language",
+      "nl": "Nederlands",
+      "en": "English",
+      "de": "Deutsch"
+    },
+    "account": {
+      "title": "Account",
+      "description": "Timezone, password and account deletion.",
+      "timezoneLabel": "Timezone",
+      "timezoneHelp": "Your times are displayed in this timezone.",
+      "saveTimezone": "Save timezone",
+      "passwordTitle": "Change password",
+      "passwordDescription": "Choose a strong password of at least 8 characters.",
+      "currentPassword": "Current password",
+      "newPassword": "New password",
+      "changePassword": "Change password",
+      "deleting": "Deleting account...",
+      "deleteTitle": "Delete account",
+      "deleteDescription": "This permanently removes all your account data and cannot be undone.",
+      "deleteAction": "Delete account",
+      "deleteConfirmTitle": "Delete account?",
+      "deleteConfirmDescription": "Type DELETE to confirm.",
+      "deleteSecondStepTitle": "Confirmation",
+      "deleteSecondStepDescription": "Type DELETE to permanently delete your account.",
+      "deleteSecondStepLabel": "Type DELETE",
+      "deleteSecondStepPlaceholder": "DELETE",
+      "errors": {
+        "passwordRequired": "Enter your password.",
+        "passwordTooShort": "Your password must be at least 8 characters.",
+        "deleteConfirmation": "Type DELETE to confirm."
+      }
+    },
+    "messages": {
+      "loadError": "We could not load your settings. Please try again.",
+      "loading": "Loading settings...",
+      "profileSaved": "Profile saved.",
+      "profileSaveError": "Profile could not be saved.",
+      "notificationsSaved": "Notifications saved.",
+      "notificationsSaveError": "Notifications could not be saved.",
+      "themeSaved": "Theme saved.",
+      "languageSaved": "Language saved.",
+      "timezoneSaved": "Timezone saved.",
+      "timezoneSaveError": "Timezone could not be saved.",
+      "passwordSaved": "Password changed.",
+      "passwordSaveError": "Password could not be changed.",
+      "deleteError": "Account could not be deleted."
+    }
+  },
+  "pomodoro": {
+    "focusComplete": "Focus block completed",
+    "breakStarted": "Break started",
+    "breakComplete": "Break completed",
+    "timeRemaining": "Time remaining: {{time}}"
+  }
+}

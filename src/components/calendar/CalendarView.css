@@ -1,0 +1,77 @@
+.calendar-view {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.calendar-view__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+
+  h1 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    color: var(--color-text-secondary);
+  }
+}
+
+.calendar-view__toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.calendar-view__toggle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.calendar-view__year-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+
+  strong {
+    min-width: 80px;
+    text-align: center;
+  }
+}
+
+.calendar-view__year-button {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    border-color var(--transition-fast),
+    background-color var(--transition-fast);
+
+  &:hover {
+    border-color: var(--color-accent);
+    background: var(--color-accent-subtle);
+  }
+}
+
+.calendar-view__state-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+@media (min-width: 768px) {
+  .calendar-view__toolbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

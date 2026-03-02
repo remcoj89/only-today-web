@@ -1,0 +1,12 @@
+---
+import { LoginForm } from "@/components/auth/LoginForm";
+import AuthPageLayout from "@/components/auth/AuthPageLayout.astro";
+---
+
+<AuthPageLayout
+  title="Inloggen | Only Today"
+  heading="Welkom terug"
+  description="Focus op vandaag. Log in en ga door met je ritme."
+>
+  <LoginForm client:only="react" />
+</AuthPageLayout>

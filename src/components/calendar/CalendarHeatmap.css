@@ -1,0 +1,108 @@
+.calendar-heatmap {
+  --calendar-heatmap-cell-size: 14px;
+  --calendar-heatmap-cell-gap: 4px;
+}
+
+.calendar-heatmap__scroll {
+  overflow-x: auto;
+  padding-bottom: var(--space-2);
+}
+
+.calendar-heatmap__layout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-3);
+  min-width: fit-content;
+}
+
+.calendar-heatmap__weekdays {
+  display: grid;
+  gap: var(--calendar-heatmap-cell-gap);
+  margin-top: 22px;
+}
+
+.calendar-heatmap__weekday-label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: var(--calendar-heatmap-cell-size);
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  line-height: 1;
+}
+
+.calendar-heatmap__content {
+  min-width: fit-content;
+}
+
+.calendar-heatmap__months {
+  display: grid;
+  margin-bottom: var(--space-2);
+}
+
+.calendar-heatmap__month-label {
+  color: var(--color-text-secondary);
+  font-size: 0.75rem;
+  line-height: 1;
+  text-transform: capitalize;
+}
+
+.calendar-heatmap__grid {
+  display: flex;
+  gap: var(--calendar-heatmap-cell-gap);
+}
+
+.calendar-heatmap__week-column {
+  display: grid;
+  gap: var(--calendar-heatmap-cell-gap);
+}
+
+.calendar-heatmap__cell {
+  width: var(--calendar-heatmap-cell-size);
+  height: var(--calendar-heatmap-cell-size);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  transition:
+    transform var(--transition-fast),
+    border-color var(--transition-fast),
+    background-color var(--transition-fast);
+
+  &:hover {
+    transform: translateY(-1px);
+    border-color: var(--color-accent);
+  }
+
+  &:focus-visible {
+    outline-offset: 1px;
+  }
+
+  &[data-in-year="false"] {
+    opacity: 0.35;
+  }
+}
+
+.calendar-heatmap__cell--level-0 {
+  background: color-mix(in srgb, var(--color-accent) 6%, transparent);
+}
+
+.calendar-heatmap__cell--level-1 {
+  background: color-mix(in srgb, var(--color-accent) 30%, transparent);
+}
+
+.calendar-heatmap__cell--level-2 {
+  background: color-mix(in srgb, var(--color-accent) 60%, transparent);
+}
+
+.calendar-heatmap__cell--level-3 {
+  background: color-mix(in srgb, var(--color-accent) 100%, transparent);
+}
+
+@media (min-width: 768px) {
+  .calendar-heatmap {
+    --calendar-heatmap-cell-size: 16px;
+    --calendar-heatmap-cell-gap: 5px;
+  }
+}

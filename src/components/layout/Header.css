@@ -1,0 +1,111 @@
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--color-border);
+  background: color-mix(in oklab, var(--color-bg-elevated) 92%, transparent);
+  backdrop-filter: blur(6px);
+}
+
+.app-header__offline-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-accent-subtle);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-semibold);
+}
+
+.app-header__desktop,
+.app-header__mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+  padding: 0 var(--space-4);
+}
+
+.app-header__date,
+.app-header__streak {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-semibold);
+}
+
+.app-header__sync {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-small);
+}
+
+.app-header__sync--syncing {
+  color: var(--color-warning);
+}
+
+.app-header__sync--synced {
+  color: var(--color-success);
+}
+
+.app-header__sync--error {
+  color: var(--color-error);
+}
+
+.app-header__sync--offline {
+  color: var(--color-text-muted);
+}
+
+.app-header__sync-icon--spin {
+  animation: app-header-spin 1s linear infinite;
+}
+
+.app-header__settings-link,
+.app-header__menu-button,
+.app-header__logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+}
+
+.app-header__logo {
+  background: var(--color-accent);
+  color: #071333;
+  font-weight: var(--font-weight-semibold);
+}
+
+.app-header__menu-button {
+  cursor: pointer;
+}
+
+.app-header__desktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .app-header__mobile {
+    display: none;
+  }
+
+  .app-header__desktop {
+    display: flex;
+  }
+}
+
+@keyframes app-header-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

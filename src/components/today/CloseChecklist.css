@@ -1,0 +1,5 @@
+.close-checklist {
+  display: grid;
+  gap: var(--space-2);
+}
+

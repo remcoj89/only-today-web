@@ -1,0 +1,14 @@
+---
+import AppShell from "@/components/layout/AppShell.astro";
+import { IslandErrorBoundary } from "@/components/layout/IslandErrorBoundary";
+import { PageTransition } from "@/components/layout/PageTransition";
+import { WeekStart } from "@/components/planning/WeekStart";
+---
+
+<AppShell title="Weekplanning | Only Today">
+  <IslandErrorBoundary client:load>
+    <PageTransition>
+      <WeekStart />
+    </PageTransition>
+  </IslandErrorBoundary>
+</AppShell>

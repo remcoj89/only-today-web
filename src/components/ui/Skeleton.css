@@ -1,0 +1,49 @@
+.ui-skeleton {
+  display: grid;
+  gap: var(--space-2);
+  width: 100%;
+}
+
+.ui-skeleton__line {
+  height: 12px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--color-border) 60%, transparent) 0%,
+    color-mix(in srgb, var(--color-border) 25%, var(--color-bg-elevated)) 50%,
+    color-mix(in srgb, var(--color-border) 60%, transparent) 100%
+  );
+  background-size: 220% 100%;
+  animation: ui-skeleton-shimmer 1.2s ease-in-out infinite;
+}
+
+.ui-skeleton__line:last-child {
+  width: 75%;
+}
+
+.ui-skeleton--sm .ui-skeleton__line {
+  height: 10px;
+}
+
+.ui-skeleton--md .ui-skeleton__line {
+  height: 12px;
+}
+
+.ui-skeleton--lg .ui-skeleton__line {
+  height: 16px;
+}
+
+@keyframes ui-skeleton-shimmer {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: -100% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ui-skeleton__line {
+    animation: none;
+  }
+}

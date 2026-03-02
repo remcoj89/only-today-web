@@ -1,0 +1,92 @@
+---
+import { AppClientProviders } from "@/components/providers/AppClientProviders";
+import "@/components/layout/PageTransition.css";
+import "./AuthPageLayout.css";
+import "@/styles/tokens.css";
+import "@/styles/global.css";
+import "@/styles/utilities.css";
+
+type Props = {
+  title: string;
+  heading: string;
+  description: string;
+  noindex?: boolean;
+};
+
+const { title, heading, description, noindex = true } = Astro.props;
+const gtmId = import.meta.env.PUBLIC_GTM_ID;
+const currentPath = Astro.url.pathname;
+const appUrl = (import.meta.env.PUBLIC_APP_URL ?? "").replace(/\/$/, "");
+const canonicalUrl = appUrl ? `${appUrl}${currentPath}` : undefined;
+---
+
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {canonicalUrl ? <link rel="canonical" href={canonicalUrl} /> : null}
+    <meta name="robots" content={noindex ? "noindex,nofollow" : "index,follow"} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/icons/og-image.svg" />
+    {canonicalUrl ? <meta property="og:url" content={canonicalUrl} /> : null}
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon-32.svg" />
+    <link rel="icon" sizes="16x16" href="/icons/favicon-16.svg" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&family=JetBrains+Mono&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script is:inline>
+      const storedTheme = localStorage.getItem("onlyTodayTheme");
+      if (storedTheme === "light" || storedTheme === "dark") {
+        document.documentElement.dataset.theme = storedTheme;
+      } else {
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = prefersDark ? "dark" : "light";
+      }
+    </script>
+    {gtmId ? (
+      <script is:inline define:vars={{ gtmId }}>
+        window.dataLayer = window.dataLayer || [];
+        const consent = localStorage.getItem("onlyTodayAnalyticsConsent");
+        if (consent === "granted" && gtmId) {
+          (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+            const f = d.getElementsByTagName(s)[0];
+            const j = d.createElement(s);
+            const dl = l !== "dataLayer" ? `&l=${l}` : "";
+            j.async = true;
+            j.src = `https://www.googletagmanager.com/gtm.js?id=${i}${dl}`;
+            f.parentNode?.insertBefore(j, f);
+          })(window, document, "script", "dataLayer", gtmId);
+        }
+      </script>
+    ) : null}
+  </head>
+  <body class="auth-page">
+    <AppClientProviders client:load />
+    <a href="#auth-main-content" class="sr-skip-link">Spring naar inhoud</a>
+    <main id="auth-main-content" class="auth-layout">
+      <section class="auth-layout__panel page-transition" aria-labelledby="auth-page-heading">
+        <a href="/" class="auth-layout__brand" aria-label="Only Today home">
+          <span class="auth-layout__brand-mark">OT</span>
+          <span class="auth-layout__brand-text">Only Today</span>
+        </a>
+        <header class="auth-layout__header">
+          <h1 id="auth-page-heading">{heading}</h1>
+          <p>{description}</p>
+        </header>
+        <slot />
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+---
+import AppShell from "@/components/layout/AppShell.astro";
+import { IslandErrorBoundary } from "@/components/layout/IslandErrorBoundary";
+import { PageTransition } from "@/components/layout/PageTransition";
+import { MonthStart } from "@/components/planning/MonthStart";
+---
+
+<AppShell title="Maandplanning | Only Today">
+  <IslandErrorBoundary client:load>
+    <PageTransition>
+      <MonthStart />
+    </PageTransition>
+  </IslandErrorBoundary>
+</AppShell>

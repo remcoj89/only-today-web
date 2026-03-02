@@ -1,0 +1,92 @@
+.goal-progress-card {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.goal-progress-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.goal-progress-card__fields {
+  display: grid;
+  gap: var(--space-2);
+  flex: 1;
+  min-width: 0;
+}
+
+.goal-progress-card__actions {
+  display: flex;
+  gap: var(--space-1);
+  flex-shrink: 0;
+}
+
+.goal-progress-card__action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: color 0.15s, background 0.15s;
+}
+
+.goal-progress-card__action:hover {
+  background: var(--color-bg-secondary);
+  color: var(--color-text);
+}
+
+.goal-progress-card__action--danger:hover {
+  background: color-mix(in srgb, var(--color-danger) 15%, transparent);
+  color: var(--color-danger);
+}
+
+.goal-progress-card__linked-list {
+  margin: 0;
+  padding-left: var(--space-4);
+  color: var(--color-text-secondary);
+  display: grid;
+  gap: var(--space-1);
+}
+
+.goal-progress-card__linked-list a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.goal-progress-card__linked-list a:hover {
+  text-decoration: underline;
+}
+
+.goal-progress-card__week-strip {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: var(--space-1);
+}
+
+.goal-progress-card__day {
+  border-radius: var(--radius-sm);
+  min-height: 24px;
+  border: 1px solid var(--color-border-subtle);
+}
+
+.goal-progress-card__day--done {
+  background: color-mix(in srgb, var(--color-success) 22%, transparent);
+  border-color: var(--color-success);
+}
+
+.goal-progress-card__day--open {
+  background: var(--color-bg-secondary);
+}
+
+.goal-progress-card__day--missed {
+  background: color-mix(in srgb, var(--color-danger) 22%, transparent);
+  border-color: var(--color-danger);
+}

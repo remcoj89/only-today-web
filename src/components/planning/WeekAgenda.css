@@ -1,0 +1,78 @@
+.week-agenda {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.week-agenda__header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.week-agenda__section {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.week-agenda__section-title {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.week-agenda__goal-list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.week-agenda__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: var(--space-3);
+}
+
+@media (max-width: 768px) {
+  .week-agenda__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.week-agenda__day {
+  display: grid;
+  gap: var(--space-2);
+  min-width: 20rem;
+  min-height: 120px;
+  padding: var(--space-2);
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-subtle);
+}
+
+.week-agenda__day-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.week-agenda__day-name {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.week-agenda__day-date {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+}
+
+.week-agenda__day-goals {
+  display: grid;
+  gap: var(--space-2);
+  align-content: start;
+}
+
+.week-agenda__empty-hint {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}

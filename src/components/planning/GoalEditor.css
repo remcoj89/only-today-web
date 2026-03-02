@@ -1,0 +1,27 @@
+.goal-editor {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.goal-editor__card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-secondary);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  gap: var(--space-4);
+}
+
+.goal-editor__card-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--font-size-h3-mobile);
+  color: var(--color-text-primary);
+}
+
+@media (min-width: 768px) {
+  .goal-editor__card {
+    padding: var(--space-5);
+  }
+}

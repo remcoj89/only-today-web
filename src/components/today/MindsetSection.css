@@ -1,0 +1,13 @@
+.today-mindset {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.today-mindset__title {
+  margin: 0;
+}
+
+.today-mindset--accent {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-glow);
+}

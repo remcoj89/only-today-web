@@ -1,0 +1,23 @@
+.checkin-composer {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.checkin-composer h2 {
+  margin: 0;
+}
+
+.checkin-composer p {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.checkin-composer__form {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.checkin-composer__notice {
+  color: var(--color-success);
+  font-weight: var(--font-weight-semibold);
+}
