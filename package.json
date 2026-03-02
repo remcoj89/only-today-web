@@ -13,7 +13,6 @@
     "@astrojs/react": "^4.4.1",
     "@astrojs/sitemap": "^3.7.0",
     "@supabase/supabase-js": "^2.46.2",
-    "astro": "^5.14.3",
     "date-fns": "^4.1.0",
     "dexie": "^4.3.0",
     "lucide-react": "^0.544.0",
@@ -22,6 +21,7 @@
   },
   "devDependencies": {
     "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3"
+    "@types/react-dom": "^19.2.3",
+    "astro": "^5.18.0"
   }
 }
