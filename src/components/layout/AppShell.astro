@@ -27,7 +27,9 @@ const {
 } = Astro.props;
 const currentPath = Astro.url.pathname;
 const gtmId = import.meta.env.PUBLIC_GTM_ID;
-const appUrl = (import.meta.env.PUBLIC_APP_URL ?? "").replace(/\/$/, "");
+const appUrl = (
+    import.meta.env.PUBLIC_WEB_URL ?? import.meta.env.PUBLIC_APP_URL ?? ""
+  ).replace(/\/$/, "");
 const canonicalUrl = appUrl ? `${appUrl}${currentPath}` : undefined;
 ---
 

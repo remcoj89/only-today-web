@@ -49,9 +49,14 @@ export function clearPersistedSession(): void {
 }
 
 function getApiBaseUrl(): string {
-  const raw = import.meta.env.PUBLIC_APP_URL;
+  const raw =
+    import.meta.env.PUBLIC_API_URL ??
+    import.meta.env.PUBLIC_WEB_URL ??
+    import.meta.env.PUBLIC_APP_URL;
   if (!raw) {
-    throw new Error("Missing PUBLIC_APP_URL environment variable.");
+    throw new Error(
+      "Missing PUBLIC_API_URL, PUBLIC_WEB_URL or PUBLIC_APP_URL environment variable.",
+    );
   }
 
   return String(raw).replace(/\/$/, "");

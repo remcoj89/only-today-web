@@ -57,10 +57,16 @@ async function parseResponse<T>(response: Response): Promise<ApiResponse<T>> {
 }
 
 function getApiBaseUrl(): string {
-  const raw = import.meta.env.PUBLIC_APP_URL ?? "";
+  const raw =
+    import.meta.env.PUBLIC_API_URL ??
+    import.meta.env.PUBLIC_WEB_URL ??
+    import.meta.env.PUBLIC_APP_URL ??
+    "";
   const base = raw.replace(/\/$/, "");
   if (!base) {
-    throw new Error("PUBLIC_APP_URL is niet geconfigureerd. Controleer je .env bestand.");
+    throw new Error(
+      "PUBLIC_API_URL, PUBLIC_WEB_URL of PUBLIC_APP_URL is niet geconfigureerd. Controleer je .env bestand.",
+    );
   }
   return base;
 }

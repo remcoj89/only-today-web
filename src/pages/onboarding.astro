@@ -5,7 +5,9 @@ import "@/styles/tokens.css";
 import "@/styles/global.css";
 import "@/styles/utilities.css";
 const gtmId = import.meta.env.PUBLIC_GTM_ID;
-const appUrl = (import.meta.env.PUBLIC_APP_URL ?? "").replace(/\/$/, "");
+const appUrl = (
+    import.meta.env.PUBLIC_WEB_URL ?? import.meta.env.PUBLIC_APP_URL ?? ""
+  ).replace(/\/$/, "");
 const canonicalUrl = appUrl ? `${appUrl}/onboarding` : undefined;
 ---
 

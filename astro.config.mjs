@@ -4,6 +4,6 @@ import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
   output: "static",
-  site: process.env.PUBLIC_APP_URL || "https://app.onlytoday.nl",
+  site: process.env.PUBLIC_WEB_URL || process.env.PUBLIC_APP_URL,
   integrations: [react(), sitemap()],
 });

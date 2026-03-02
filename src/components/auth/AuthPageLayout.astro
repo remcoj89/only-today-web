@@ -16,7 +16,9 @@ type Props = {
 const { title, heading, description, noindex = true } = Astro.props;
 const gtmId = import.meta.env.PUBLIC_GTM_ID;
 const currentPath = Astro.url.pathname;
-const appUrl = (import.meta.env.PUBLIC_APP_URL ?? "").replace(/\/$/, "");
+const appUrl = (
+    import.meta.env.PUBLIC_WEB_URL ?? import.meta.env.PUBLIC_APP_URL ?? ""
+  ).replace(/\/$/, "");
 const canonicalUrl = appUrl ? `${appUrl}${currentPath}` : undefined;
 ---
 
